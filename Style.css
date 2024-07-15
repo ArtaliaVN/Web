@@ -1,0 +1,271 @@
+body{
+    background-color:rgb(23, 23, 23);
+}
+
+.Toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(37, 35, 35);
+    height: 12%;
+    border-bottom: solid;
+    border-color: rgb(58, 207, 180);
+}
+
+.LeftTool {
+    float: left;
+    margin: 4px 90px;
+}
+
+.RightTool {
+    float: right;
+    margin: 4px 90px;
+}
+
+.MiddlePage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60%;
+    background: rgb(23, 23, 23);
+}
+
+.Descript{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.info{
+    width: 50%
+}
+
+.selfie{
+    width: 50%;
+}
+
+.title{
+    justify-content: center;
+    color:rgb(58, 207, 180);
+}
+
+.LeftPage{
+    display: block;
+    width: 50%;
+    margin: 50px 100px;
+}
+
+div {
+    background-color: rgb(31, 31, 31);
+    border-style: line;
+    border-radius: 1px;
+}
+
+
+.RightPage{
+    width: 50%;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3,200px);
+}
+
+Button {
+    font-size: 15px;
+    background-color: rgb(37, 35, 35);
+    color: rgb(58, 207, 180);
+    font-family:Arial;
+    list-style-type: none;
+    padding: 10px 5px;
+    margin: 0px 10px;
+    border-style: unset;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+Button:hover {
+    background-color: rgb(74, 69, 69);
+}
+
+.Contact{
+    padding-top: 250px;
+    display: flex;
+}
+
+.BtnContact{
+    font-size: 15px;
+    font-family: Arial;
+    background-color: rgb(58, 207, 180);
+    color: rgb(0, 0, 0);
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px 20px;
+}
+
+.BtnContact:hover{
+    background-color:black;
+    color: yellow;
+    border-color: rgb(0, 0, 0);
+}
+
+.BtnGit{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(58, 207, 180);
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.BtnGit:hover{
+    background-color:black;
+    border-color: rgb(0, 0, 0);
+}
+
+.BtnDownloadCV{
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 0px 40px;
+}
+
+.EmailPopUp{
+    visibility:hidden;
+    background-color: rgb(67, 67, 67);
+    height: 400px;
+    width: 500px;
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    display: grid;
+    border-style: solid;
+    border-color: rgb(23, 23, 23);
+    border-width: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "aa aa aa aa"
+    "bb bb cc cc"
+    "dd dd dd dd"
+    "ee ee ee ee"
+    "ee ee ee ee"
+    "ff ff ff ff"
+}
+
+.EmailItem1{
+    grid-area: aa;
+    background-color: rgb(23, 23, 23);
+    color: rgb(58, 207, 180);
+    display: flex;
+    justify-content: center;
+}
+
+.EmailItem2{
+    grid-area: bb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.EmailItem3{
+    grid-area: cc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.EmailItem4{
+    grid-area: dd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.EmailItem5{
+    grid-area: ee;
+}
+
+.EmailItem6{
+    grid-area: ff;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    margin: 5px;
+    vertical-align: middle;
+    flex-grow: 1;
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+
+.Send{
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    background-color: rgb(37, 35, 35);
+    color: rgb(58, 207, 180);
+    font-family:Arial;
+    list-style-type: none;
+    margin: 20px 10px;
+    border-style: unset;
+    border-radius: 5px;
+    transition:inherit;
+}
+
+.Cancel{
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    background-color: rgb(37, 35, 35);
+    color: rgb(58, 207, 180);
+    font-family:Arial;
+    list-style-type: none;
+    margin: 20px 10px;
+    border-style: unset;
+    border-radius: 5px;
+    transition:inherit;
+}
+.Cancel:hover{
+    background-color:black;
+    color: yellow;
+    border-color: rgb(0, 0, 0);
+}
+
+.Send:hover{
+    background-color:black;
+    color: yellow;
+    border-color: rgb(0, 0, 0);
+}
+
+.dropDownLang{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(37, 35, 35);;
+}
+
+.dropDownContent{
+    display: none;
+    color: rgb(58, 207, 180);
+    position: absolute;
+    min-width: 150px;
+}
+
+.dropDownContent div{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropDownContent div:hover{
+    background-color: rgb(74, 69, 69);
+}
+
+.dropDownLang:hover .dropDownContent {
+    display: block;
+}
+
+
+

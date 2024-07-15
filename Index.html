@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+    <head> 
+        <title>ArtaliaPortFo</title>
+        <link rel = "stylesheet" href = "Style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <nav class = "Toolbar"> 
+                <section class = "LeftTool">
+                    <a href = "Index.html"><button style = "border-bottom: solid; border-color: rgb(58, 207, 180)" id = "Index"></button></a>
+                    <a href = "AboutMe.html"><button id = "About me"></button></a>
+                    <a href = "Achievement.html"><button id = "Achievement"></button></a>
+                </section>
+
+                <section class = "RightTool">
+                    <div id = "dropDownLang" class = "dropDownLang">
+                        <button id = "Language"></button>
+                        <div id = "dropDownContent" class = "dropDownContent">
+                            <div onclick = "changeLanguage(1)" id = "Eng">English</div>
+                            <div onclick = "changeLanguage(2)" id = "Viet">Tiếng Việt</div>
+                        </div>
+                    </div>
+                    <button id = "Control"></button>
+                </section>
+            </nav>  
+
+            <section class = "MiddlePage">
+                <section class = "LeftPage">
+                    <nav style = "font-size: 120px; font-family: fantasy; color: aliceblue; text-shadow: 30px 30px rgb(11, 11, 11)" id = "GOODDAY"></nav>
+                    <nav style = "font-size: 50px; font-family: fantasy; color: aliceblue" id = "name"></nav>
+                    <h3 style = "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue" id = "jobIntro"></h3>
+                    <section class = "Contact">
+                        <button onclick = "popUp('EmailPopUp')" class = "BtnContact" id = "BtnContact">CONTACT ME</button>
+                        <button onclick = "downloadCV()" class = "BtnDownloadCV" id = "BtnDownloadCV">My CV</button>
+                        <button onclick = "openGit()" class = "BtnGit" id = "BtnGit"><img src = "/Image/GitBlack.png" alt="Git" width = "20px" height="20px"></button>
+                    </section>
+                </section>
+
+                <section class = "RightPage">
+                    <div class = "item1">item1</div>
+                    <div class = "item2">item2</div>
+                    <div class = "item3">item3</div>
+                    <div class = "item4">item4</div>
+                    <div class = "item5">item5</div>
+                    <div class = "item6">item6</div>
+                    <div class = "item7">item7</div>
+                    <div class = "item8">item8</div>
+                    <div class = "item9">item9</div>
+                </section>
+            </section>
+        </header>   
+
+        <div id = "EmailPopUp" class = "EmailPopUp">
+            <div class = "EmailItem1 item">
+                <h1 >Contact me</h1>
+            </div>
+        
+            <div class = "EmailItem2 item">
+                <input type = "text" name = "First name..."/>
+            </div>
+        
+            <div class = "EmailItem3 item">
+                <input type = "text" name = "Last name..."/>
+            </div>
+        
+            <div class = "EmailItem4 item">
+                <input type = "text" name = "Email..."/>
+            </div>
+        
+            <div class = "EmailItem5 item">
+                
+            </div>
+        
+            <div class = "EmailItem6 item">
+                <button onclick = "exitPopUp('EmailPopUp')" class = "Cancel">Cancel</button>
+                <button class = "Send">Send</button>
+            </div>
+        </div>       
+        <script src = "Action.js"></script>    
+    </body>
+</html>

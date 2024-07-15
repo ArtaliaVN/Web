@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+    <head> 
+        <title>ArtaliaPortFo</title>
+        <link rel = "stylesheet" href = "Style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <nav class = "Toolbar"> 
+                <section class = "LeftTool">
+                    <a href = "Index.html"><Button id = "Index"></Button></a>
+                    <a href = "AboutMe.html"><Button id = "About me"></Button></a>
+                    <a href = "Achievement.html"><Button style = "border-bottom: solid; border-color: rgb(58, 207, 180)" id = "Achievement"></Button></a>
+                </section>
+
+                <section class = "RightTool">
+                    <div id = "dropDownLang" class = "dropDownLang">
+                        <button id = "Language"></button>
+                        <div id = "dropDownContent" class = "dropDownContent">
+                            <div onclick = "changeLanguage(1)" id = "Eng">English</div>
+                            <div onclick = "changeLanguage(2)" id = "Viet">Tiếng Việt</div>
+                        </div>
+                    </div>
+                    <button id = "Control"></button>
+                </section>
+            </nav>  
+        </header>         
+        <script src = "Action.js"></script>     
+    </body>
+</html>
